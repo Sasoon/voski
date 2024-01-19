@@ -1,0 +1,53 @@
+---
+import { services } from '../../components/services/ServicesData.js';
+import FaqCta from '../../components/services/FaqCta.astro';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return services.map((service) => ({
+    params: { service: service.name.toLowerCase().replace(/\s+/g, '-') },
+  }));
+}
+
+const serviceName = Astro.params.service.replace(/-/g, ' ');
+const serviceData = services.find((s) => s.name.toLowerCase() === serviceName.toLowerCase());
+
+if (!serviceData) {
+  return Astro.redirect('/404');
+}
+---
+
+<Layout
+  description={`${serviceData.description}`}
+  title={`${serviceData.name} | Services | Voski Music School`}
+>
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col gap-4 sm:gap-6">
+        <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
+          {serviceData.name}
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden px-4 py-20">
+    <img
+      src={serviceData.img}
+      alt={serviceData.name}
+      class="absolute inset-0 z-0 h-full w-full object-cover brightness-50"
+    />
+    <div class="absolute justify-center text-center align-middle">
+      <p class="text-xl font-semibold text-white lg:text-2xl">
+        {serviceData.description}
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-6">
+    <p class="mx-auto max-w-xl text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+      {serviceData.content}
+    </p>
+  </section>
+  <FaqCta />
+</Layout>
