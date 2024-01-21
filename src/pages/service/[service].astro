@@ -37,14 +37,20 @@ if (!serviceData) {
       alt={serviceData.name}
       class="absolute inset-0 z-0 h-full w-full object-cover brightness-50"
     />
-    <div class="absolute justify-center text-center align-middle">
-      <p class="text-xl font-semibold text-white lg:text-2xl">
-        {serviceData.description}
-      </p>
-    </div>
   </section>
 
-  <section class="mt-6">
+  <section class="mt-16">
+    <div
+      class="m-auto mb-16 max-w-xl flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 first-letter:flex dark:bg-primary-400/10"
+    >
+      <div class="flex flex-col gap-4">
+        <p
+          class="mx-auto max-w-xl text-xl font-light text-primary-950 dark:text-primary-200/70 sm:text-xl"
+        >
+          {serviceData.description}
+        </p>
+      </div>
+    </div>
     <p class="mx-auto max-w-xl text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
       {serviceData.content}
     </p>
