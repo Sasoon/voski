@@ -1,25 +1,19 @@
 ---
 const testimonials = [
   {
-    name: 'Rebecca Hayes',
-    description: 'Designer',
-    image: '/assets/testimonial-1.webp',
+    name: 'Cassandra G',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '"I’ve been an adult student with Alvart for five years, starting lessons as a complete beginner. Alvart is a great teacher. She makes sure the lessons are challenging, finds music that fits my interests and importantly, has always treated me as an adult student. Being taken seriously right from the start built my confidence and helped me stick with it, especially through the first 18 months when everything was difficult, I sounded horrible and it was easy to feel silly. Alvart has also been very flexible in terms of how lessons are delivered, offering an online option, which was great when I was on maternity leave. I can’t recommend her enough to future students."',
   },
   {
-    name: 'Rosa Spencer',
-    description: 'Team Leader',
-    image: '/assets/testimonial-2.webp',
+    name: 'Krishna P',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '"Alvart\'s music theory and ear training classes aren’t your typical, dry lessons. She brings it to life in a way that\'s both fun and informative. My son used to find theory intimidating, but Alvart makes the material seem simple and relevant. Her classes are a big part of why my son continued playing viola . Anyone who feels their child is overwhelmed by musicianship and music theory should look into her classes."',
   },
   {
-    name: 'Christina Upton',
-    description: 'Manager',
-    image: '/assets/testimonial-3.webp',
+    name: 'Imogen M',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '"My daughters have been learning violin and musicianship with Ms. Alvart for four and six years. She really knows how to connect with her students and make exams and concerts less daunting and dare I say, even enjoyable! Both our daughters have passed multiple AMEB exams with High Distinctions and Distinctions, we are very happy with their progress."',
   },
 ];
 ---
@@ -28,10 +22,10 @@ const testimonials = [
   <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
-        Trusted by the largest companies in the world
+        Testimonials from current students
       </h2>
       <div
-        class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0"
+        class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0"
       >
         {
           testimonials.map((testimonial) => (
@@ -39,7 +33,7 @@ const testimonials = [
               <div class="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
                   <svg
-                    class="text-primary-600 dark:text-primary-400 h-6 w-6"
+                    class="h-6 w-6 text-primary-600 dark:text-primary-400"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -49,16 +43,12 @@ const testimonials = [
                   </svg>
                 ))}
               </div>
-              <blockquote class="text-primary-950/70 dark:text-primary-200/70 text-center text-lg italic leading-loose">
+              <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
                 <p>{testimonial.message}</p>
               </blockquote>
               <figcaption class="flex flex-col gap-4">
-                <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
                 <div class="text-center">
                   <div class="text-base font-medium">{testimonial.name}</div>
-                  <div class="text-primary-950/70 dark:text-primary-200/70 text-sm">
-                    {testimonial.description}
-                  </div>
                 </div>
               </figcaption>
             </figure>
