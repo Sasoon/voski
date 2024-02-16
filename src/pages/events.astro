@@ -19,8 +19,30 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+  <div class="relative mx-auto max-w-3xl px-4 py-6 sm:px-6 sm:py-6 lg:px-8">
+    <!-- Spinner Overlay -->
+    <div id="calendarLoader" class="absolute inset-0 flex items-center justify-center">
+      <div
+        class="border-gray-200 border-blue-500 h-10 w-10 animate-spin rounded-full border-4 border-t-4"
+      >
+      </div>
+    </div>
     <div events-calendar-app project-id="proj_h5zZxBrtmHurxGs0XmPUg"></div>
     <script type="text/javascript" src="//dist.eventscalendar.co/main.js"></script>
+    <script>
+      // Custom script to hide the loader once the events calendar is loaded
+      // This script would need to be adjusted based on how the events calendar signals it has finished loading
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const calendarApp = document.querySelector('[events-calendar-app]');
+        const observer = new MutationObserver((mutations, obs) => {
+          if (calendarApp.childNodes.length > 0) {
+            // Adjust this condition as needed
+            document.getElementById('calendarLoader').style.display = 'none';
+            obs.disconnect();
+          }
+        });
+        observer.observe(calendarApp, { childList: true });
+      });
+    </script>
   </div>
 </Layout>
