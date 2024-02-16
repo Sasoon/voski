@@ -1,5 +1,15 @@
 ---
-import { services } from '../services/ServicesData';
+// Import services data
+import { services } from '../services/ServicesData.js';
+
+// Receive the serviceName prop passed from the parent component
+const { service: serviceName } = Astro.props;
+
+// Function to normalize names for a consistent comparison is correct
+// But let's ensure it matches how we use it in the dropdown
+function normalizeServiceName(name) {
+  return name.toLowerCase().replace(/\s+/g, '-');
+}
 ---
 
 <section class="flex-1">
@@ -45,6 +55,7 @@ import { services } from '../services/ServicesData';
           />
         </div>
 
+        <!-- Service Select Dropdown -->
         <div>
           <label for="service" class="sr-only">Service</label>
           <select
@@ -52,8 +63,19 @@ import { services } from '../services/ServicesData';
             id="service"
             class="block w-full appearance-none rounded-md border-0 bg-primary-50 px-4 py-4 text-base ring-1 ring-primary-900/40 transition placeholder:text-primary-950/60 hover:ring-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400"
           >
-            <option value="" disabled selected>Relevant service</option>
-            {services.map((service) => <option value={service.name}>{service.name}</option>)}
+            <option value="" disabled>Select a Service</option>
+            {
+              services.map((service) => (
+                <option
+                  value={normalizeServiceName(service.name)}
+                  selected={
+                    normalizeServiceName(service.name) === normalizeServiceName(serviceName)
+                  }
+                >
+                  {service.name}
+                </option>
+              ))
+            }
           </select>
         </div>
 

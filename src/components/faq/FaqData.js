@@ -38,7 +38,7 @@ export const instrumental = [
     id: 'inst-7',
     title: 'What is the duration of each lesson?',
     answer:
-      'Lessons are 30, 45 or 60 minutes long. The duration of each lesson is determined by the teacher and student.',
+      'Lessons are 30, 45, 60 or 75 minutes long. The duration of each lesson is determined by the teacher and student.',
   },
   {
     id: 'inst-8',
@@ -49,8 +49,7 @@ export const instrumental = [
   {
     id: 'inst-9',
     title: 'Can I book a one-off lesson?',
-    answer:
-      'Lessons are 30, 45 or 60 minutes long. The duration of each lesson is determined by the teacher and student.',
+    answer: 'Yes, casual lessons are available. Please enquire separately for these prices.',
   },
   {
     id: 'inst-10',
@@ -61,7 +60,13 @@ export const instrumental = [
     id: 'inst-11',
     title: 'Do you offer online lessons? When can we utilise this option?',
     answer:
-      "Online lessons are always available and very useful when either teacher or student cannot attend their lesson in person for any reason.  Questions about invoices, fees, lesson specifics, cancellations, tardiness, purchasing instruments and music, concert information, or any other inquiries will be addressed in your initial lesson. Prior to enrollment, you will receive an email with a copy of the terms and conditions for you to review and retain for future use. If you have further questions, please don't hesitate to contact us here.",
+      'Online lessons are always available and very useful when either teacher or student cannot attend their lesson in person for any reason.',
+  },
+  {
+    id: 'inst-12',
+    title: 'How are instrumental lessons billed?',
+    answer:
+      'Instrumental lessons are billed in advance every term, like all other lessons. All details will be included on the invoice which will be emailed to you.',
   },
 ];
 
@@ -198,7 +203,7 @@ export const ensemble = [
 export const groupIntroClass = [
   {
     id: 'gic-1',
-    title: 'Where are group learning sessions held?',
+    title: 'Where are group introductory sessions held?',
     answer: 'All sessions are held on premises.',
   },
   {
@@ -252,31 +257,31 @@ export const pianoAccompaniment = [
   },
 ];
 
-export const groupLearningSessions = [
+export const openMasterclass = [
   {
-    id: 'gls-1',
-    title: 'Where are group learning sessions held?',
+    id: 'om-1',
+    title: 'Where are open masterclass sessions held?',
     answer: 'All sessions are held on premises.',
   },
   {
-    id: 'gls-2',
+    id: 'om-2',
     title:
       'Are these sessions open to other students who would like to observe and not participate?',
     answer: 'Yes! We highly encourage your presence, please contact us here.',
   },
   {
-    id: 'gls-3',
-    title: 'How are group learning sessions billed?',
+    id: 'om-3',
+    title: 'How are open masterclass sessions billed?',
     answer:
       'You’ll be sent an invoice, and payment of the invoice will secure your spot in the session. No refunds or postponements.',
   },
   {
-    id: 'gls-4',
-    title: 'Do you hold group learning sessions during the holidays?',
+    id: 'om-4',
+    title: 'Do you hold open masterclass sessions during the holidays?',
     answer: 'Yes!',
   },
   {
-    id: 'gls-5',
+    id: 'om-5',
     title: 'Can we play in these sessions if we aren’t enrolled in the school?',
     answer:
       'Only students of the school can play in the sessions as spots are limited, however you are welcome to book and observe the sessions!',
@@ -289,5 +294,5 @@ export default {
   ensemble,
   groupIntroClass,
   pianoAccompaniment,
-  groupLearningSessions,
+  openMasterclass,
 };
