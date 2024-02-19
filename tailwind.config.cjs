@@ -10,6 +10,8 @@ module.exports = {
       current: 'currentColor',
       transparent: 'transparent',
       white: '#ffffff',
+      blue: '#0A2C55',
+      gold: '#F8CB53',
       primary: colors.stone,
     },
     fontFamily: {

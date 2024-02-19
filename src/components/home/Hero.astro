@@ -1,3 +1,7 @@
+---
+import Button from '../../components/Button.astro';
+---
+
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-16">
@@ -8,21 +12,17 @@
           </h1>
           <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
             At Voski, we're dedicated to nurturing and developing your musical goals. Our <a
-              href="/services"
-              class="underline">programs</a
+              href="/education"
+              class="underline decoration-gold decoration-4">programs</a
             > offer a carefully planned, well-rounded musical education, where your musical
             aspirations can truly flourish.
           </p>
         </div>
-        <a
-          href="/services"
-          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
-        >
-          Get started
-        </a>
+        <Button href="/education" label="Get started" variant="default" />
         <img
           class="h-auto w-full rounded-3xl"
-          src="https://ucarecdn.com/a5b7c7c7-4819-4afc-be66-d225b25139e1/-/preview/3000x2220/-/quality/smart_retina/-/format/auto/"
+          src="https://ucarecdn.com/8c949b27-3979-4f4c-9af9-2705c6d77b28/
+/-/preview/3000x2220/-/quality/smart_retina/-/format/auto/"
           alt="Hero picture"
         />
       </div>

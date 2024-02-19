@@ -1,0 +1,26 @@
+---
+interface ButtonProps {
+  href: string;
+  label: string;
+  variant?: 'default' | 'dark'; // Add more variants as needed
+}
+
+const defaultProps: Partial<ButtonProps> = {
+  variant: 'default', // Default variant if none is provided
+};
+
+// Function to get dynamic classes based on props
+function getButtonClasses(variant: ButtonProps['variant']) {
+  const baseClasses =
+    'inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+  const variantClasses = {
+    default: 'bg-blue hover:bg-gold hover:text-blue text-white focus-visible:outline-primary-600',
+    dark: 'dark:bg-gold dark:text-blue dark:hover:bg-blue dark:hover:text-white dark:focus-visible:outline-primary-400',
+  };
+  return `${baseClasses} ${variantClasses[variant]}`;
+}
+---
+
+<a href={Astro.props.href} class={getButtonClasses(Astro.props.variant || defaultProps.variant)}>
+  {Astro.props.label}
+</a>
