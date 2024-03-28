@@ -22,13 +22,13 @@ const { title, questions } = Astro.props;
         questions.map((question, index) => (
           <div
             class="rounded-3xl px-4 transition"
-            x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected } }`}
+          x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected }, get isLast() { return ${index} === ${questions.length - 1} } }`}
             x-bind:class="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
           >
             <dt
               class="border-b text-lg transition"
               x-cloak
-              x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }"
+              x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen), 'border-b-0': isLast }"
             >
               <button
                 type="button"
