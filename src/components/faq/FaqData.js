@@ -267,7 +267,8 @@ export const openMasterclass = [
     id: 'om-2',
     title:
       'Are these sessions open to other students who would like to observe and not participate?',
-    answer: 'Yes! We highly encourage your presence, please contact us here.',
+    answer:
+      'Yes! We highly encourage your presence, please call or email us to observe these sessions.',
   },
   {
     id: 'om-3',
