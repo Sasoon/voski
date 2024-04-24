@@ -46,13 +46,13 @@ if (!serviceData) {
       >
         <div class="flex flex-col gap-4">
           <p
-            class="max-w-3xl text-xl font-light text-primary-950 dark:text-primary-200/70 sm:text-xl"
-          >
-            {serviceData.description}
-          </p>
+            class="max-w-3xl text-lg font-light text-primary-950 dark:text-primary-200/70 sm:text-xl"
+            set:html={serviceData.pricing}
+          />
         </div>
       </div>
       <p class="max-w-xl text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+        {serviceData.description}
         {serviceData.content}
       </p>
     </div>
