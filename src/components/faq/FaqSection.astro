@@ -4,7 +4,7 @@ const { title, questions } = Astro.props;
 ---
 
 <div
-  class="mx-auto w-11/12 border-b border-primary-900/10 p-4"
+  class="mx-auto w-11/12 border-b border-primary-900/10 dark:border-primary-300/10 p-4"
   x-data="{ isOpen: false }"
 >
   <h2
@@ -19,7 +19,7 @@ const { title, questions } = Astro.props;
       x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
     >
       {
-        questions.map((question, index) => (
+        questions.map((question: { title: unknown; answer: unknown; }, index: any) => (
           <div
             class="rounded-3xl px-4 transition"
           x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected }, get isLast() { return ${index} === ${questions.length - 1} } }`}
