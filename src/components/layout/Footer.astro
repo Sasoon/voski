@@ -51,13 +51,19 @@ const bottomLinks = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
       <div class="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
-        <img
-          class="h-20 w-auto rounded-full"
-          width="65"
-          height="40"
-          :src="$store.theme.isDark ? 'https://ucarecdn.com/ad4faf4c-74a0-493f-bd7e-9906c84d8601/voskilogo.png' : 'https://ucarecdn.com/ad4faf4c-74a0-493f-bd7e-9906c84d8601/voskilogo.png'"
-          alt="Voski"
-        />
+        <a
+          href="/"
+          class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
+        >
+          <span class="sr-only">Voski</span>
+          <img
+            class="h-20 w-auto rounded-full"
+            width="65"
+            height="40"
+            :src="$store.theme.isDark ? 'https://ucarecdn.com/ad4faf4c-74a0-493f-bd7e-9906c84d8601/voskilogo.png' : 'https://ucarecdn.com/ad4faf4c-74a0-493f-bd7e-9906c84d8601/voskilogo.png'"
+            alt="Voski"
+          />
+        </a>
         <p class="text-sm text-primary-950/70 dark:text-primary-200/70">
           © 2024 Voski Music Studio
         </p>
