@@ -1,8 +1,8 @@
 export const services = [
   {
-    name: 'Instrument Tuition',
+    name: 'Private Tuition',
     description:
-      'One-on-one instrumental lessons providing personalised attention, leading to more effective and faster progress.',
+      'One-on-one string instrumental and theory lessons providing personalised attention, leading to more effective and faster progress.',
     img: 'https://ucarecdn.com/63a53f12-c89f-4c23-836a-207025f065e6/-/resize/1920x/-/quality/smart_retina/-/format/auto/',
     thumbnail:
       'https://ucarecdn.com/63a53f12-c89f-4c23-836a-207025f065e6/-/preview/600x600/-/format/auto/-/quality/smart_retina/',
