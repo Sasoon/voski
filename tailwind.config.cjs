@@ -18,6 +18,10 @@ module.exports = {
       sans: ['Inter', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif'],
     },
+    fontWeight: {
+      normal: 400,
+      medium: 500,
+    },
     fontSize: {
       xs: ['0.75rem', '1rem'],
       sm: ['0.875rem', '1.25rem'],
