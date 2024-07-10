@@ -65,7 +65,7 @@
       />
       <button
         type="submit"
-        class="bg-blue-500 font-bold hover:bg-blue-600 rounded px-4 py-2 text-sm text-white transition-colors duration-300"
+        class="hover:text-black dark:hover:text-black font-bold rounded bg-blue px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-gold dark:bg-blue dark:text-white dark:hover:bg-gold"
         >Subscribe</button
       >
     </form>
@@ -100,9 +100,31 @@
     transform: scale(1);
   }
 
-  /* Add this to ensure text remains black in dark mode */
+  /* Ensure text remains black in dark mode, except for the button */
   .modal-content,
   .modal-content *:not(button) {
+    color: black !important;
+  }
+
+  /* Specific styles for the button to maintain correct colors in all modes */
+  .modal-content button {
+    @apply bg-blue !important;
+    color: white !important;
+  }
+
+  .modal-content button:hover {
+    @apply bg-gold !important;
+    color: black !important;
+  }
+
+  /* Specific styles for the button to maintain correct colors in all modes */
+  .dark .modal-content button {
+    @apply bg-blue !important;
+    color: white !important;
+  }
+
+  .dark .modal-content button:hover {
+    @apply bg-gold !important;
     color: black !important;
   }
 </style>
