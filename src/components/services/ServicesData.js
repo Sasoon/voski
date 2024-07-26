@@ -17,18 +17,20 @@ export const services = [
       These lessons are booked and billed as a package.`,
   },
   {
-    name: 'Group Introductory Class',
+    name: 'Schools and Strings Program',
     description:
-      'One-off group lesson for beginners of all ages. A class to explore and become acquainted with what lies ahead!',
+      'This weekly class is held at schools only, designed to introduce students to the violin family and the elements of music through engaging group classes.',
     img: `https://ucarecdn.com/9db9ad24-fe1f-4696-a49f-93663722c772/-/resize/1920x/-/quality/smart_retina/-/format/auto/`,
     thumbnail: `https://ucarecdn.com/9db9ad24-fe1f-4696-a49f-93663722c772/-/preview/600x600/-/format/auto/-/quality/smart_retina/`,
-    content: `This is a fun, one-off group lesson for beginners of all ages. It's suitable whether you're enrolled in our music school, planning to enroll, or just want to learn about musical elements. The class covers various musical fundamentals in an engaging group setting.`,
+    content: `All instruments and equipment are provided by VMS.
+Check to see if your school is listed and register now to reserve your place. Spots are limited.`,
     pricing: `
-      <strong>Group Introductory Class</strong><br>
-      <i>(one-off trial class for all children aged 4-6)</i><br><br>
-      <i>$30.00 / 30 minutes</i><br>
-      <br>
-      This class is booked and billed as a one-off session.`,
+    <strong>Schools and Strings Program</strong><br>
+<i>This weekly class is held at schools only, designed to introduce students to the violin family and the elements of music through engaging group classes. </i><br><br>
+45-60minutes long<br>
+$260/student<br><br>
+8 week program`
+
   },
   {
     name: 'Musicianship',
