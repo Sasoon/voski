@@ -28,7 +28,7 @@ Check to see if your school is listed and register now to reserve your place. Sp
     <strong>Schools and Strings Program</strong><br>
 <i>This weekly class is held at schools only, designed to introduce students to the violin family and the elements of music through engaging group classes. </i><br><br>
 45-60minutes long<br>
-$260/student<br><br>
+$220/student<br><br>
 8 week program`
 
   },
