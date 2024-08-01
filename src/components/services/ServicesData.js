@@ -9,7 +9,8 @@ export const services = [
     content: `Specialised instrumental lessons are valuable because they're tailored just for you. This personalised environment makes it comfortable to ask questions and grasp the tricky parts at your own pace. Throughout your learning journey, you'll receive ongoing feedback to ensure you're on the right track and making the most out of your lessons.`,
     pricing: `
       <strong>Specialised lessons</strong><br>
-      <i>(one on one lessons incorporating tailored instrumental tuition, musicianship, theory, music history and aural training)</i><br><br>
+      <i>(one on one lessons incorporating tailored strings tuition, musicianship, theory, music history and aural training)</i><br><br>
+      <i>$75.00 / 45 minutes</i><br>
       <i>$97.00 / 60 minutes</i><br>
       <i>$122.00 / 75 minutes</i><br>
       <br>

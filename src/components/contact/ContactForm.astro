@@ -6,13 +6,18 @@ import Button from '../../components/Button.astro';
 <section class="py-12">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid gap-12 lg:grid-cols-2 lg:gap-8">
-      <div class="flex flex-col gap-4 sm:gap-6">
+      <div class="flex flex-col justify-between gap-4 sm:gap-6">
         <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Get in touch</h2>
         <p class="max-w-lg text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
-          Register your interest in music lessons, or ask any questions you may have.
+          We'd love to hear from you! Please get in touch if you have questions, need more
+          information about our programs, or want to enrol.
         </p>
+        <img
+          class="max-w-100 rounded-3xl lg:max-w-lg"
+          src="https://ucarecdn.com/47c1e3a3-68b6-430a-9278-b15bae61e2a2/-/preview/1000x749/"
+        />
       </div>
-      <form name="contact" netlify method="POST" class="mt-3 flex flex-col gap-y-6">
+      <form name="contact" netlify method="POST" class="mt-3 flex flex-col justify-between gap-y-6">
         <!-- Full name input -->
         <div>
           <label for="full-name" class="sr-only">Full name</label>
