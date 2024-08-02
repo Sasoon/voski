@@ -48,7 +48,6 @@ const { description, title } = Astro.props;
       defer
       src="https://analytics.us.umami.is/script.js"
       data-website-id="30e5f980-5f09-4723-8777-ac167a8003c0"></script>
-
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
@@ -79,7 +78,7 @@ const { description, title } = Astro.props;
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16612575671"></script>
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
