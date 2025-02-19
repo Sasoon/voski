@@ -72,6 +72,23 @@ import Button from '../../components/Button.astro';
           </select>
         </div>
 
+        <div>
+          <label for="source" class="sr-only">How did you hear about us?</label>
+          <select
+            name="source"
+            id="source"
+            required
+            class="block w-full appearance-none rounded-md border-0 bg-primary-50 px-4 py-4 text-base ring-1 ring-primary-900/40 transition placeholder:text-primary-950/60 hover:ring-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400"
+          >
+            <option value="" disabled selected>How did you hear about us?</option>
+            <option value="Google">Google</option>
+            <option value="In Person">Saw studio in person</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Friend">Friend/Family Referral</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
         <!-- Message textarea -->
         <div>
           <label for="message" class="sr-only">Message</label>
