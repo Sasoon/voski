@@ -10,11 +10,7 @@ export const services = [
     pricing: `
       <strong>Specialised lessons</strong><br>
       <i>(one on one lessons incorporating tailored strings tuition, musicianship, theory, music history and aural training)</i><br><br>
-      <i>$75.00 / 45 minutes</i><br>
-      <i>$97.00 / 60 minutes</i><br>
-      <i>$122.00 / 75 minutes</i><br>
       <br>
-      Fees are per student, per lesson.<br>
       These lessons are booked and billed as a package.`,
   },
   {
@@ -29,7 +25,6 @@ Check to see if your school is listed and register now to reserve your place. Sp
     <strong>Schools and Strings Program</strong><br>
 <i>This weekly class is held at schools only, designed to introduce students to the violin family and the elements of music through engaging group classes. </i><br><br>
 45-60minutes long<br>
-$220/student<br><br>
 8 week program`
 
   },
@@ -42,10 +37,8 @@ $220/student<br><br>
     content: `Musicianship is about becoming a musician, not just learning to play an instrument technically. It involves observing and listening in a musical context, reading scores, ear and rhythm training, music theory, composing basics, and a light dip into music history.`,
     pricing: `
       <strong>Musicianship Class</strong><br>
-      <i>(includes musicianship, composition, music history, theory, aural training, and improvisation)</i><br><br>
-      <i>$55.00 / 60 minutes</i><br>
+      <i>(includes musicianship, composition, music history, theory, aural training, and improvisation)
       <br>
-      Fees are per student, per class.<br>
       These classes are booked and billed as a package.`,
   },
   {
@@ -60,10 +53,7 @@ $220/student<br><br>
     pricing: `
       <strong>Piano Accompaniment</strong><br>
       <i>(lesson and rehearsal with a collaborative pianist)</i><br><br>
-      <i>$48.00 / 30 minutes</i><br>
-      <i>$60.00 / 45 minutes</i><br>
       <br>
-      Fees are per student, per class.<br>
       This rehearsal is booked and billed as a one-off session.`,
   },
   {
@@ -75,8 +65,6 @@ $220/student<br><br>
     pricing: `
       <strong>Open Masterclass</strong><br>
       <i>(class with an experienced professional musician in front of a small audience)</i><br><br>
-      <i>$60.00 (to participate)</i><br>
-      <i>$10.00 (to observe)</i><br>
       <br>
       This class is booked and billed as a one-off session.`,
   },
@@ -89,9 +77,7 @@ $220/student<br><br>
     pricing: `
       <strong>Ensembles</strong><br>
       <i>(small groups of musicians rehearsing ensemble music with a teacher)</i><br><br>
-      <i>$30.00 / 45 minutes</i><br>
       <br>
-      Fees are per student, per lesson.<br>
       These lessons are booked and billed as a package.`,
   },
 ];
